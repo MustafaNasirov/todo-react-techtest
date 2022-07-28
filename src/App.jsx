@@ -1,7 +1,8 @@
-import './App.css';
+import './App.scss';
 import ToDoBar from './components/ToDoBar/ToDoBar';
 import { useState } from "react";
 import ToDoList from './components/ToDoList/ToDoList';
+import Nav from './components/Nav/Nav';
 
 const App = () => {
 
@@ -38,7 +39,7 @@ const App = () => {
 
   return (
     <div className='app-container'>
-        <h1>To Do</h1>
+        <Nav reset={reset}/>
         <ToDoBar addToDo={addToDo} inputToDo={inputToDo} addInputToDo={addInputToDo}/>
         <ToDoList todos={todos} removeToDo={removeToDo}/>
     </div>

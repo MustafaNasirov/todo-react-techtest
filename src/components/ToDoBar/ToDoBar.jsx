@@ -1,4 +1,4 @@
-
+import "./ToDoBar.scss"
 
 const ToDoBar = ({addToDo, inputToDo, addInputToDo}) => {
 

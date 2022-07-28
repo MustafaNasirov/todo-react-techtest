@@ -1,0 +1,16 @@
+.nav__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+
+
+    .nav__title{
+        font-size: 3rem;
+    }
+    
+    .nav__resetBtn{
+        width: 10rem;
+    }
+}
