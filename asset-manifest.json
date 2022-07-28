@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/todo-reac-techtest/static/css/main.073c9b0a.css",
+    "main.js": "/todo-reac-techtest/static/js/main.c867e5d1.js",
+    "static/js/787.a2919e45.chunk.js": "/todo-reac-techtest/static/js/787.a2919e45.chunk.js",
+    "static/media/logo.svg": "/todo-reac-techtest/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/todo-reac-techtest/index.html",
+    "main.073c9b0a.css.map": "/todo-reac-techtest/static/css/main.073c9b0a.css.map",
+    "main.c867e5d1.js.map": "/todo-reac-techtest/static/js/main.c867e5d1.js.map",
+    "787.a2919e45.chunk.js.map": "/todo-reac-techtest/static/js/787.a2919e45.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.c867e5d1.js"
+  ]
+}
