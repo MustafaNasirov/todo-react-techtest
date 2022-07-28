@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/todo-reac-techtest/static/css/main.51837c31.css",
-    "main.js": "/todo-reac-techtest/static/js/main.b7fcca5f.js",
+    "main.css": "/todo-reac-techtest/static/css/main.0d7f5746.css",
+    "main.js": "/todo-reac-techtest/static/js/main.c061aa79.js",
     "static/js/787.a2919e45.chunk.js": "/todo-reac-techtest/static/js/787.a2919e45.chunk.js",
     "index.html": "/todo-reac-techtest/index.html",
-    "main.51837c31.css.map": "/todo-reac-techtest/static/css/main.51837c31.css.map",
-    "main.b7fcca5f.js.map": "/todo-reac-techtest/static/js/main.b7fcca5f.js.map",
+    "main.0d7f5746.css.map": "/todo-reac-techtest/static/css/main.0d7f5746.css.map",
+    "main.c061aa79.js.map": "/todo-reac-techtest/static/js/main.c061aa79.js.map",
     "787.a2919e45.chunk.js.map": "/todo-reac-techtest/static/js/787.a2919e45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.51837c31.css",
-    "static/js/main.b7fcca5f.js"
+    "static/css/main.0d7f5746.css",
+    "static/js/main.c061aa79.js"
   ]
 }
