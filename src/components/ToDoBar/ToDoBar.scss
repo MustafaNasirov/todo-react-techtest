@@ -14,11 +14,14 @@
 
     .todo-bar__button{
         display: inline-block;
-        float: right;
         margin: .35rem;
         background-color: white;
         border: .15rem solid black;
         border-radius: 15px;
         padding: .5rem;
+    }
+
+    .todo-bar__button:hover{
+        background-color: rgb(203, 203, 203);
     }
 }
