@@ -1,15 +1,24 @@
 .todo-bar{
-
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
 
     .todo-bar__input{
         display: block;
+        border: 0.125em solid black;
+        border-radius: 15px;
+        padding: .5rem;
     }
 
     .todo-bar__button{
         display: inline-block;
         float: right;
+        margin: .35rem;
+        background-color: white;
+        border: .15rem solid black;
+        border-radius: 15px;
+        padding: .5rem;
     }
 }
