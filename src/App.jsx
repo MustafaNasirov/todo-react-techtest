@@ -1,38 +1,55 @@
-import logo from './logo.svg';
 import './App.css';
 import ToDoBar from './components/ToDoBar/ToDoBar';
 import { useState } from "react";
+import ToDoList from './components/ToDoList/ToDoList';
 
-function App() {
+const App = () => {
 
     const [todos, setToDos] = useState([]);
+
+    const [inputToDo, setInputToDo] = useState("");
     
 
     // add todos to list
-    const addToDo = (event) => {
-        if(event.target[0].value == ""){
+    const addToDo = () => {
+        console.log(todos)
+        console.log("worked on click")
+        
+
+        if(inputToDo == ""){
             alert("please enter a todo")
             return;
         }
-        setToDos();
-        event.target[0].value = "";
+
+
+        setToDos([...todos, {id: todos.length, info: inputToDo}]);
+        setInputToDo("");
+
     }
 
-    // remove todo from list
-    const removeToDo = () => {
+    const addInputToDo = (event) => {
+        setInputToDo(event.target.value)
+        
+    }
 
+    console.log(inputToDo);
+
+    // remove todo from list
+    const removeToDo = (id) => {
+        setToDos(todos.filter(todo => todo.id != id))
     }
 
 
     // clear todos from list
     const reset = () => {
-        setToDos();
+        setToDos([]);
     }
 
   return (
     <div className='app-container'>
         <h1>To Do</h1>
-        <ToDoBar addToDo={addToDo}/>
+        <ToDoBar addToDo={addToDo} addInputToDo={addInputToDo}/>
+        <ToDoList todos={todos} removeToDo={removeToDo}/>
     </div>
   );
 }

@@ -1,12 +1,19 @@
-import ToDo from "../ToDo/ToDo"
+import ToDo from "../ToDo/ToDo";
 
-const ToDoList = ({todos}) => {
+const ToDoList = ({todos, removeToDo}) => {
 
     const todoArr = todos.map(todo => {
-        return <ToDo></ToDo>
+        return (
+            <ToDo 
+            key={todo.id}
+            todoID={todo.id}
+            todoInfo={todo.info}
+            removeToDo={removeToDo}
+            />    
+        )
     }) 
 
-    return
+    return <>{todoArr}</>
 }
 
 export default ToDoList;

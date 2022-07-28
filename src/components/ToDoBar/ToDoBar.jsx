@@ -1,12 +1,12 @@
 
 
-const ToDoBar = (addToDo) => {
+const ToDoBar = ({addToDo, addInputToDo}) => {
 
     return(
-        <form onSubmit={addToDo} className="todo-bar">
-            <input className="todo-bar__input" type="text" placeholder="Add a todo ..."/>
-            <button className="todo-bar__button">+</button>
-        </form>
+        <div className="todo-bar">
+            <input className="todo-bar__input" type="text" onChange={addInputToDo} placeholder="Add a todo ..."/>
+            <button onClick={addToDo} className="todo-bar__button" >+</button>
+        </div>
     )
 }
 
