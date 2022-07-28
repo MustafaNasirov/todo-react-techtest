@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./ToDo.scss"
 
 const ToDo = ({todoID, todoInfo, removeToDo}) => {
 
@@ -17,7 +17,7 @@ const ToDo = ({todoID, todoInfo, removeToDo}) => {
                 {todoInfo}
             
             </label>
-            <button className="todo__button" onClick={() => removeToDo(todoID)}>-</button>
+            <button className="todo__button" onClick={() => removeToDo(todoID)}>X</button>
         </div>
     )
 

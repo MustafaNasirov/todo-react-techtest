@@ -1,0 +1,21 @@
+.todo{
+    display: flex;
+    flex-direction: row;
+    border: 0.2rem solid black ;
+    border-radius: 10px;
+    justify-content: space-between;
+
+    .todo__checkbox{
+        padding: 1rem;
+        margin-left: 1rem;
+
+    }
+    .todo__box{
+        padding: 1rem;
+    }
+    .todo__button{
+        display: inline-block;
+        padding: 1rem;
+        border: none;
+    }
+}
