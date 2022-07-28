@@ -11,34 +11,25 @@ const App = () => {
     
 
     // add todos to list
-    const addToDo = () => {
-        console.log(todos)
-        console.log("worked on click")
-        
+    const addToDo = (event) => {
 
         if(inputToDo == ""){
             alert("please enter a todo")
             return;
         }
 
-
         setToDos([...todos, {id: todos.length, info: inputToDo}]);
         setInputToDo("");
-
     }
 
     const addInputToDo = (event) => {
         setInputToDo(event.target.value)
-        
     }
-
-    console.log(inputToDo);
 
     // remove todo from list
     const removeToDo = (id) => {
         setToDos(todos.filter(todo => todo.id != id))
     }
-
 
     // clear todos from list
     const reset = () => {
@@ -48,7 +39,7 @@ const App = () => {
   return (
     <div className='app-container'>
         <h1>To Do</h1>
-        <ToDoBar addToDo={addToDo} addInputToDo={addInputToDo}/>
+        <ToDoBar addToDo={addToDo} inputToDo={inputToDo} addInputToDo={addInputToDo}/>
         <ToDoList todos={todos} removeToDo={removeToDo}/>
     </div>
   );

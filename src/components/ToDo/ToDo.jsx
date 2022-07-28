@@ -12,7 +12,11 @@ const ToDo = ({todoID, todoInfo, removeToDo}) => {
     return(
         <div className="todo">
             <input className="todo__checkbox" type="checkbox" onChange={setDoneCheckBox}></input>
-            <label className="todo__box">{todoInfo}</label>
+            <label className="todo__box"
+            style={done ? {textDecoration: 'line-through'}:{textDecoration:'none'}}>
+                {todoInfo}
+            
+            </label>
             <button className="todo__button" onClick={() => removeToDo(todoID)}>-</button>
         </div>
     )
